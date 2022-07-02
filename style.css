@@ -38,7 +38,9 @@ body {
  justify-content: center;
  display: flex;
  padding-top: 1rem;
+ position: relative;
 }
+
 
 .hero-left {
     width: 50vw;
@@ -62,7 +64,7 @@ body {
     gap: 0.5rem;
 }
 
-.fa-brands .fa-html5 {
+.fa-brands {
     color: black;
 }
 
@@ -76,4 +78,32 @@ body {
 
 .skill {
     text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-one, .project-two{
+    padding: 2rem;
+    display: flex;
+}
+
+.text-container {
+    padding: 2rem;
+}
+
+
+
+.project-one p, .project-two p {
+    margin-bottom: 2rem;
+}
+
+button {
+    border: none;
+    padding-right: 2rem;
+    background-color: #F0E6E6;
+    cursor: pointer;
+    font-weight: bold;
 }
