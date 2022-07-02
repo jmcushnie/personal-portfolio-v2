@@ -21,12 +21,42 @@ body {
 
 .nav-container ul li {
     margin: 1rem;
-    list-style: none;   
+    list-style: none;  
+    
 }
+
+ul a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+ul a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(20, 20, 20);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+
+ul a:hover:after {
+    width: 100%; 
+  left: 0;
+}
+
 
 a {
     text-decoration: none;
+    
 }
+
 
 .hamburger {
     display: none;
@@ -107,6 +137,7 @@ a {
     flex-direction: row;
     justify-content: center;
     margin-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .hero-right {
@@ -157,6 +188,28 @@ a {
     text-align: center;
 }
 
+.about {
+    width: 50vw;
+}
+
+.gradient {
+    width: 50vw;
+    
+}
+
+.about-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+}
+
+.about-container h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -183,10 +236,35 @@ button {
     background-color: #F0E6E6;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    font-size: larger;
 }
 
 .project-text {
     font-size: 3rem;
     font-weight: normal;
     font-style: italic;
+}
+
+#contact {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.email-link:hover {
+    font-size: larger;
+    transition: ease-in-out 0.2s ;
+}
+
+.contact-container img {
+    position: relative;
+    z-index: -1;
+    bottom: 100px;
 }
