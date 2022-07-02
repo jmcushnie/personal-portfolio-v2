@@ -1,5 +1,4 @@
 *{
-    outline: red 1px solid;
     font-family: 'Raleway', sans-serif;
     color: black;
     box-sizing: border-box;
@@ -17,11 +16,16 @@ body {
 .nav-container ul {
     display: flex;
     justify-content: right;
+    list-style: none;
 }
 
 .nav-container ul li {
     margin: 1rem;
-    list-style: none;
+    list-style: none;   
+}
+
+a {
+    text-decoration: none;
 }
 
 .hero-container {
@@ -72,8 +76,9 @@ body {
     display: flex;
     gap: 3rem;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 .skill {
@@ -85,7 +90,7 @@ body {
     flex-direction: column;
 }
 
-.project-one, .project-two{
+.project-one, .project-two, .project-three{
     padding: 2rem;
     display: flex;
 }
@@ -96,7 +101,7 @@ body {
 
 
 
-.project-one p, .project-two p {
+.project-one p, .project-two p, .project-three p {
     margin-bottom: 2rem;
 }
 
@@ -106,4 +111,10 @@ button {
     background-color: #F0E6E6;
     cursor: pointer;
     font-weight: bold;
+}
+
+.project-text {
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: italic;
 }
