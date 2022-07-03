@@ -268,3 +268,56 @@ button:hover {
     z-index: -1;
     bottom: 100px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .hero-container {
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .hero-right img {
+        width: 300px !important;
+        height: 300px !important;
+    }
+   
+    .hero-left h1 {
+        padding-top: 5rem;
+        font-size: 2.8rem;
+        white-space:normal;
+        width: 50vw;
+    }
+
+    .hero-left p {
+    }
+
+    .icons {
+        padding-bottom: 3rem;
+    }
+
+        .gradient {
+            position:absolute;
+            z-index: -1;
+        }
+    .about {
+        width: 100vw;
+        padding-bottom: 4rem;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-one,.project-two,.project-three {
+        display: flex;
+        flex-direction: column;
+        padding:2rem;
+    }
+
+}
