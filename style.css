@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Meshed Display", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,28 +7,31 @@
 }
 
 body {
-  background-color: #f0e6e6;
+  background-color: #F1F1EF;
   margin: 2rem;
   height: 100vh;
   color: black;
 }
 
-.nav-container ul {
-  display: flex;
-  justify-content: right;
-  list-style: none;
+.logo {
+  float: left !important;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.nav-container ul li {
-  margin: 1rem;
-  list-style: none;
+li {
+  float: right;
 }
 
-ul a {
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: black;
-  padding-bottom: 3px;
-  position: relative;
 }
 
 ul a:after {
@@ -126,7 +129,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding-bottom: 3rem;
 }
 
@@ -144,7 +147,7 @@ a {
 
 .hero-left {
   width: 50vw;
-  padding: 10% 0 0 7%;
+padding:15% 0 0 3rem;
   animation: slideInFromLeft 0.8s ease-in;
 }
 
@@ -153,36 +156,12 @@ a {
   margin-bottom: 1rem;
 }
 
-.hero-left p {
-  line-height: 1.3rem;
-  padding-bottom: 1rem;
-}
-
-.icons ul {
-  list-style: none;
-  display: flex;
-  gap: 0.5rem;
-}
-
 .fa-brands {
   color: black;
 }
 
-.skills-container {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  margin-top: 6rem;
-  margin-bottom: 5rem;
-  flex-wrap: wrap;
-}
-
-.skill {
-  text-align: center;
-}
-
 .about {
-  width: 50vw;
+  width: 100vw;
 }
 
 .gradient {
@@ -196,20 +175,35 @@ a {
 }
 
 .about-container h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
-  padding-bottom: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid black;
 }
 
-.projects-container {
+.about-container p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 3rem;
+  margin: 4rem;
+  line-height: 3rem;
+
+}
+
+.description em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.portfolio-container {
   display: flex;
   flex-direction: column;
 }
 
-.project-one,
-.project-two,
-.project-three {
+.portfolio-one,
+.portfolio-two,
+.portfolio-three {
   padding: 2rem;
   display: flex;
 }
@@ -218,9 +212,9 @@ a {
   padding: 2rem;
 }
 
-.project-one p,
-.project-two p,
-.project-three p {
+.portfolio-one p,
+.portfolio-two p,
+.portfolio-three p {
   margin-bottom: 2rem;
 }
 
@@ -237,10 +231,12 @@ button:hover {
   font-size: larger;
 }
 
-.project-text {
-  font-size: 3rem;
+.portfolio-text {
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid black;
 }
 
 #contact {
