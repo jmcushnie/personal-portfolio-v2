@@ -14,3 +14,5 @@ document.querySelector(".nav-item").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+// animations
