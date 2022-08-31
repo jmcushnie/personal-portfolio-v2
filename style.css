@@ -84,7 +84,7 @@ a {
     display: block;
     float: right;
     margin-top: 1rem;
-    padding-right: 0.5rem;
+    margin-right: 1.5rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -158,7 +158,6 @@ a {
   height: auto;
   width: auto;
 }
-
 
 .hero-left {
   width: 50vw;
@@ -313,41 +312,43 @@ button:hover {
 
   body {
     margin: 0.5rem;
-    width: 100vw;
+    height: 100vh;
   }
 
   .hero-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-left {
     padding: 0;
     margin: 0;
+    width: fit-content;
   }
   .hero-left h1 {
-    margin: 2rem;
-    display: flex;
+    margin-top: 3rem;
     flex-wrap: wrap;
     white-space: nowrap ;
     font-size: 3rem;
     padding-top: 3rem;
+    text-align: center;
   }
 
   .hero-right {
-    justify-content: center;
+    width: 100%;
   }
   .hero-right img {
-    width: 300px !important;
+    width: 350px !important;
     height: 300px !important;
-   margin-left: 80%;
 }
 
 .about-container p {
   text-align: start;
   padding: 0;
   margin: 3rem 1rem 3rem 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2rem;
 }
 
@@ -361,6 +362,20 @@ button:hover {
 .portfolio-three {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem ;
+}
+
+.text-container {
+  margin: 0;
 }
   
 .skills-container p {
@@ -371,5 +386,12 @@ button:hover {
   word-spacing: 5px;
   text-align: center;
   padding-top: 2rem;
+}
+
+.about h3,
+.portfolio-text,
+.skills-container h3 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 }
