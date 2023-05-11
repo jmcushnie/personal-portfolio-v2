@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/f83dfae58e.js" crossorigin="anonymous"></script>
     <title>Jess Cushnie Portfolio</title>
 </head>
 <body>
-    <nav>
         <nav id="myTopNav" class="nav-container">
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#projects">projects</a> </li>
-                <li class="nav-item"><a href="#about">about me</a> </li>
+                <li class="logo"><a href="">jess cushnie</a> </li>
+                <li class="nav-item"><a href="#portfolio">portfolio</a> </li>
+                <li class="nav-item"><a href="#about">about</a> </li>
                 <li class="nav-item"><a href="#contact">contact</a> </li>
             </ul>
 
@@ -26,72 +27,32 @@
 
     <div class="hero-container">
         <div class="hero-left">
-            <h1>Hello I'm Jess,</h1>
-            <p>a frontend developer based in Christchurch, New Zealand.<br>
-            I like to design and build things for the web.</p>
-            <div class="icons">
-                <ul>
-                    <li class="hero-icon"><a href="https://github.com/jmcushnie" target="_blank"><i class="fa-brands fa-github fa-l"></i> </a> </li>
-                    <li class="hero-icon"><a href="https://www.linkedin.com/in/jesscushnie/" target="_blank"><i class="fa-brands fa-linkedin fa-l"></i></a> </li>
-                </ul>
-            </div>
+            <h1>creative designer <br>
+            <em>& developer</em></h1>
             </div>
 
             <div class="hero-right">
-            <img  style =" width: 400px; height:400px" src="/img/portfolio img.png" alt="">
+            <img  style =" width: 550px; height:500px" src="/img/portfolio pic-11.png" alt="">
             </div> 
-    </div>
-
-    <div class="skills-container">
-        <div class="skill">
-        <i class="fa-brands fa-html5 fa-4x"></i>
-        <p>HTML5</p>
-    </div>
-        <div class="skill">
-        <i class="fa-brands fa-css3 fa-4x"></i>
-        <p>CSS</p>
-    </div>
-        <div class="skill">
-        <i class="fa-brands fa-js fa-4x"></i>
-        <p>JavaScript</p>
-    </div>
-        <div class="skill">
-        <i class="fa-brands fa-figma fa-4x"></i>
-        <p>Figma</p>
-    </div>
-        <div class="skill">
-        <i class="fa-brands fa-github fa-4x"></i>
-        <p>GitHub</p>
-    </div>
-        <div class="skill">
-        <i class="fa-brands fa-react fa-4x"></i>
-        <p>React</p>
-    </div>
-        <div class="skill">
-        <i class="fa-brands fa-node fa-4x"></i>
-        <p>Node.js</p>
-    </div>
     </div>
 
 
     <div id="about" class="about-container">
-        <div class="gradient">
-            <img style = " width:500px;height:300px" src="/img/Shape (40).png" alt="">
-        </div>
         <div class="about">
-        <h3>about me</h3>
-        <p>i am a junior developer currently immersing myself in the world
-            of web development. i am self-motivated, i love to be challenged and enjoy learning new skills. 
-            when i am not building things for the the web i am usually doing something creative - or playing the sims.</p>
+        <h3>01/ about me</h3>
+        <p data-aos="fade-up">Hey I’m Jess, a self taught <em>designer and developer</em>
+             based in <em>Christchurch, New Zealand.</em>
+             In the last year i have immersed myself in the world of <em>software development,</em> creating projects and challenging myself everyday learning new skills.    </p>
     </div>
     
 </div>
 
-    <h3 class="project-text">projects</h3>
-    <div id="projects" class="projects-container">
-        <div class="project-one">
-            <img style = " width:400px;height:300px" src="/img/advice gen mock.jpg" alt="">
+    <h3 class="portfolio-text">02/ portfolio</h3>
+    <div id="portfolio" class="portfolio-container">
+        <div data-aos="fade-right"class="portfolio-one">
+            <img style = " width:400px;height:300px" src="/img/advice gen.jpg" alt="">
             <div class="text-container">
+                <h2> Advice Generator</h2>
             <p>I built this project as part of a Frontend Mentor challenge. Built with HTML, CSS, JavaScript and 
                 the Advice Slip API.
                 </p>
@@ -100,10 +61,11 @@
                     </div>
                   </div>
         </div>
-        <div class="project-two">
+        <div data-aos="fade-left"class="portfolio-two">
             
-            <img style = " width:400px;height:300px" src="/img/weather app mock.jpg" alt="">
+            <img style = " width:400px;height:300px" src="/img/weather dashboard.jpg" alt="">
             <div class="text-container">
+                <h2>Weather Dashboard</h2>
                 <p>In this project i used the OpenWeatherAPI along with HTML, CSS and JavaScript to create a 
                 nice personal dashboard with your time, location and weather.
             </p>
@@ -112,29 +74,44 @@
                 </div>
             </div>
         </div>
-        <div class="project-three">
-        <img style = " width:400px;height:300px" src="/img/portfolio mock.jpg" alt="">
+        <div data-aos="fade-right" class="portfolio-three">
+        <img style = " width:400px;height:300px" src="/img/astrology mock.jpg" alt="">
         <div class="text-container">
-            <p>This is my personal portfolio project i have been working on. Built using HTML, CSS and JavaScript.
+            <h2>Astrology Website</h2>
+            <p>An Astrology website i am currently working on. Built using HTML, CSS and JavaScript and Astrology API. Working on adding new features and adding a blog.
         </p>
          <div class="button-container">
-             <button onclick="location.href='https://jesscushnie.com/'">View live <i class="fa-solid fa-right-long"></i></button> <button onclick="location.href='https://github.com/jmcushnie/Personal-portfolio'">Github <i class="fa-solid fa-right-long"></i></button>
+             <button onclick="location.href='https://supernova-astrology.netlify.app'">View live <i class="fa-solid fa-right-long"></i></button> <button onclick="location.href='https://github.com/jmcushnie/super-nova-astrology'">Github <i class="fa-solid fa-right-long"></i></button>
             </div>
         </div>
     </div>
     </div>
     </div>
 
+    <section class="skills-container">
+        <h3>03/ skills</h3>
+        <p><span style="word-spacing:3rem ;"><em>HTML</em> CSS <span style="border:solid 1px black ; border-radius: 50%; padding: 0.2rem;">JavaScript</span> Node.js</span> Adobe Illustrator <em>Adobe Photoshop</em> Figma <em>Github</em> Bootstrap</p>
+    </section>
+
     <section id= "contact" class="contact-container">
-        <div class="email-link">
-        <a class="email" href="mailto:jesscushnie@gmail.com">get in touch </i></a>
+        <div data-aos="fade-up"class="email-link">
+       <p>feel free to</p> <a class="email" href="mailto:jesscushnie@gmail.com">get in touch </i></a>
+       <div class="icons"> <a href="https://github.com/jmcushnie" target="_blank"> <i class="fa-brands fa-github fa-2xs"></i></a>
+        <a href="https://www.linkedin.com/in/jesscushnie/" target="_blank"><i class="fa-brands fa-linkedin fa-2xs"></i> </a>
+    </div>
        
    </div> 
-   <img style = " width:400px;height:200px" src="/img/Shape (36).png" alt="">
    </section>
 
 
 
-<script src="script.js"></script>    
+<script src="script.js"></script> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:180,
+    duration:1200
+  });
+</script>   
 </body>
 </html>
